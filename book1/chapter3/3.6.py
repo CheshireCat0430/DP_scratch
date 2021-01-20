@@ -4,8 +4,12 @@
 
 import numpy as np
 import pickle
-from mnist import load_mnist
 from PIL import Image
+
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+from dataset.mnist import load_mnist
 
 def sigmoid(x) :
     return 1/(1+np.exp(-x))
@@ -27,7 +31,7 @@ def get_data() :
     return x_test, t_test
 
 def init_network() :
-    with open("./book1/chapter3/sample_weight.pkl", 'rb') as f :
+    with open("./book1/dataset/sample_weight.pkl", 'rb') as f :
         network = pickle.load(f)
     return network
 

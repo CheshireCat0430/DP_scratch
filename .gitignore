@@ -2,6 +2,4 @@
 scratch/
 
 # mnist.py 파생 파일 제외
-book1/chapter3/__pycache__/
-book1/chapter3/mnist.pkl
-book1/chapter3/*.gz
+book1/dataset/
