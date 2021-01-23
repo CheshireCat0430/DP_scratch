@@ -1,5 +1,5 @@
 '''
-3층 신경망 구현
+softmax 함수 구현
 '''
 
 import numpy as np
